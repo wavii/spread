@@ -39,9 +39,7 @@ void map(tcp::endpoint& local_endpoint, vector<tcp::endpoint>& remote_endpoints)
    spreader<> s(io, local_endpoint, remote_endpoints, cout);
    string line;
    while (getline(cin, line))
-   {
       s << line.substr(line.find("USER: ")); // map the user in a log line
-   }
 }
 ```
 
