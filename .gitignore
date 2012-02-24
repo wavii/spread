@@ -12,3 +12,4 @@ cmake_install.cmake
 spread
 !include/spread
 explode
+libspread.a
