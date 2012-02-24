@@ -1,7 +1,5 @@
 #include <spread/exploder.h>
-
 #include <iostream>
-
 #include <boost/bind.hpp>
 
 using namespace std;
@@ -38,6 +36,6 @@ exploder & exploder::operator<<(const string& data)
 
 exploder::~exploder()
 {
-   for (typename vector< partition_ptr >::iterator it = partitions_.begin(); it != partitions_.end(); ++it)
+   for (vector< partition_ptr >::iterator it = partitions_.begin(); it != partitions_.end(); ++it)
       (*it)->close();
 }
