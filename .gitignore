@@ -1,0 +1,14 @@
+# ignore eclipse stuff
+.project
+.cproject
+# vim 
+*.swp
+# cmake stuff
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+# makefile output
+spread
+!include/spread
+explode
