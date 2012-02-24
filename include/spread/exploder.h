@@ -26,7 +26,7 @@ public:
             const boost::asio::ip::tcp::endpoint& server,
             const std::vector<boost::asio::ip::tcp::endpoint>& clients,
             std::ostream& out,
-            boost::shared_ptr<progress> _progress);
+            boost::shared_ptr<progress> _progress = boost::shared_ptr<progress>());
 
    exploder & operator<<(const std::string& data);
 

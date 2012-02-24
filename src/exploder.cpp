@@ -10,7 +10,7 @@ exploder::exploder(boost::asio::io_service& io,
                    const boost::asio::ip::tcp::endpoint& server,
                    const vector<boost::asio::ip::tcp::endpoint>& clients,
                    ostream& out,
-                   boost::shared_ptr<progress> _progress)
+                   boost::shared_ptr<progress> _progress /*= boost::shared_ptr<progress>()*/)
 : acceptor_(new boost::asio::ip::tcp::acceptor(io, server)),
   progress_(_progress)
 {

@@ -30,7 +30,7 @@ public:
             const boost::asio::ip::tcp::endpoint& server,
             const std::vector<boost::asio::ip::tcp::endpoint>& clients,
             std::ostream& out,
-            boost::shared_ptr<progress> _progress,
+            boost::shared_ptr<progress> _progress = boost::shared_ptr<progress>(),
             const hasher_type& hfn = hasher_type())
    : acceptor_(new boost::asio::ip::tcp::acceptor(io, server)),
      progress_(_progress),
